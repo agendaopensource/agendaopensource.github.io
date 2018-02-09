@@ -1,19 +1,19 @@
 title: Open Source Agenda
 description: Use opensource to share upcoming events and meetups 
-
 google_analytics: UA-113892872-1
 
-theme: jekyll-theme-slate
+collections:
+  events:
+    output: true
+    permalink: /event/:slug/
 
+theme: jekyll-theme-slate
 sass:
     style: compressed
-
 markdown: kramdown
-
 plugins:
   - jekyll-feed
 #  - jekyll-paginate
-
 exclude:
   - Gemfile
   - Gemfile.lock
