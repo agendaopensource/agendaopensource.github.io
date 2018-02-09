@@ -43,6 +43,13 @@ Meetup for all Python enthusiasts in Porto.
 
 ***
 
+**Feb 28, 6:45-8:45PM @ Hostelworld**  
+i/o
+<a href="https://www.meetup.com/devopsporto/events/247652857/" target="_blank">DevOps Porto - DevOps Porto #13: Google Cloud Platform and Kubernetes</a>  
+Welcome to our #13th meetup about DevOps and its culture, values and practices. This will be our first meetup around Google Cloud Platform and will be hosted by Hostelworld.
+
+***
+
 **Mar 8, 7-9PM @ Porto i/o**  
 <a href="https://www.meetup.com/portocodes/events/drgxdpyxfblb/" target="_blank">Porto Codes</a>  
 We are a group of software engineering enthusiasts that meet every month to share experiences.  
