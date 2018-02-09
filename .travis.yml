@@ -1,6 +1,5 @@
-language: ruby
-rvm:
-  - 2.3
+script:
+  - date > lastbuild && git add lastbuild && git commit -m "Build - $(date)"
 deploy:
   provider: pages
   skip-cleanup: true
