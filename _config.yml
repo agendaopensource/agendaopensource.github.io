@@ -2,19 +2,25 @@ title: Open Agenda
 description: Upcoming events and meetups 
 google_analytics: UA-113892872-1
 
+github_link: https://github.com/agendaopensource/agendaopensource.github.io
+link_to_new_event: https://github.com/agendaopensource/agendaopensource.github.io/issues/new?template=event.md&title=New%20event&labels=event
+
 collections:
   events:
     output: true
     permalink: /event/:slug/
 
-theme: jekyll-theme-slate
+#theme: minima
 sass:
     style: compressed
 markdown: kramdown
 plugins:
   - jekyll-feed
 #  - jekyll-paginate
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .travis.yml
+  - ci-build.sh
 # paginate: 9

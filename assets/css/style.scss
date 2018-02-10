@@ -1,34 +1,28 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-#forkme_banner {
-    background-color: #151515;
+.caption {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
-#header_wrap {
-    background: #2196f3;
+.love i {
+    font-size: 1rem;
 }
 
-nav {
-    background-color: #ffffff;
-    padding: .5rem 1rem;
-}
-
-nav a:hover, nav a:focus {
-    text-decoration: none;
+.card-panel .title {
     font-weight: bold;
 }
 
-nav a {
-    font-weight: bold;
+.events .card-panel {
+    padding: 15px;
 }
 
-#main_content_wrap {
-    border-top: 0px;
+.events .card-panel p {
+    margin-top: 0px;
 }
 
-#project_title, #project_tagline {
-    text-shadow: none;
+.stack img {
+    height: 100px;
 }

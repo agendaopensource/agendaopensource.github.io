@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem "minima"
 gem 'jekyll-paginate'
 gem 'jekyll-feed'
-gem 'jekyll-theme-slate'
+gem "jekyll-material-theme"
+gem 'jekyll-seo-tag'

@@ -12,4 +12,4 @@ Open source agenda for meetups and events
 
 To test pages locally using docker:
 
-``docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages``
+``docker run --rm --volume="$PWD:/srv/jekyll" -p4000:4000 -it jekyll/jekyll jekyll serve``
