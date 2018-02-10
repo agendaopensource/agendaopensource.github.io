@@ -18,8 +18,13 @@ git clone https://${GITHUB_TOKEN}@github.com/agendaopensource/agendaopensource.g
 # build with Jekyll into "_site"
 bundle exec jekyll build
 
-# push
 cd _site
+
+# Revision info
+date > lastbuild.txt
+echo Travis \#$TRAVIS_BUILD_NUMBER >> lastbuild.txt
+
+# push
 git config user.email "travis-ci@agendaopensource.github.io"
 git config user.name "Travis CI"
 git add --all
