@@ -12,7 +12,7 @@ permalink: /speakers
 
         <p class="flow-text">
             Have you spoken in a conference recently?<br />
-            Share with us the subjects that you like to speak and get ready to be selected for the next conference!<br /> 
+            Share with us the subjects that you like to speak and get ready to be selected for the next conference! :)<br /> 
         </p>
 
     </div>

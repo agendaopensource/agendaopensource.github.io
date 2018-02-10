@@ -12,8 +12,7 @@ permalink: /about
 
         <p class="flow-text">
         This project was born to act as a glue to different organizations that are currently pushing events or meetups.<br />
-        Another goal is to link speakers to events and vice versa, by having a curated repository of Speakers and a call for speakers.
-
+        Another goal is to link speakers to events and vice versa, by having a curated repository of Speakers and a call for papers list.
         </p>
 
         <h4>Under the wood</h4>
