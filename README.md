@@ -11,6 +11,6 @@ Don't forget to follow our [code of condutct](https://github.com/agendaopensourc
 
 # Run this project locally
 
-To make it easier to test, open console and run the following command:
-``docker run --rm --volume="$PWD:/srv/jekyll" -p4000:4000 -it jekyll/jekyll jekyll serve``
-Open browser in url: http://localhost:4000
+To make it easier to test, open console and run the following command:  
+``docker run --rm --volume="$PWD:/srv/jekyll" -p4000:4000 -it jekyll/jekyll jekyll serve``  
+Open browser in url: http://localhost:4000  
