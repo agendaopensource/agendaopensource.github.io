@@ -59,6 +59,12 @@ permalink: /
     We are a group of software engineering enthusiasts that meet every month to share experiences. 
 </div>
 
+<div class="card-panel">    
+    <p class="title">Jun 14-15, All day @ Hard Club</p>
+    <a href="https://techinporto.com" target="_blank">TECHinPORTO</a><br />  
+    TECHinPORTO was born in 2017 from Jumia's will to share and promote Porto's state of the art Information Technologies. By teaming up with great technology partners, we expect to bring the best from the tech community to our blooming city, learn together and deliver a kickass experience.
+
+</div>
 
     </div>
 </div>
