@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="section events">
+    <p class="caption">{{ site.description }}</p>
+
+    {{ content }}
+
+    {% assign sorted_events = site.data.events | sort:"startDate" %}
+    {% for event in sorted_events %}
+    <div class="card-panel">
+      <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br />
+      <p>
+        {% include function_event_date.html endDate=event.endDate startDate=event.startDate %}
+        {% if event.location.name %}
+          @ {{ event.location.name }}
+        {% endif %}
+      </p>
+      {{ event.description }}
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

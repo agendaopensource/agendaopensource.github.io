@@ -1,0 +1,65 @@
+{% comment %}
+To help formatting the start and duration of the event
+current date: 2018-02-11 08:00 expected result: Feb 11, 8am
+{% endcomment %}
+
+{% assign ymdstart = include.startDate | date: "%Y%m%d" %}
+{% assign ymdend = include.endDate | date: "%Y%m%d" %}
+
+{% if ymdstart == ymdend %}
+
+  {% assign mstart = include.startDate | date: "%B" %}
+  {% case mstart %}
+    {% when 'May' or June' or 'July' %}{{ mstart }}
+    {% when 'September' %}Sept.
+    {% else %}{{ include.startDate | date: "%b" }}.
+  {% endcase %}
+
+  {{ include.startDate | date: "%d" }},
+
+  {% assign hmstart = include.startDate | date: "%H:%M" %}
+  {% assign hmend = include.endDate | date: "%H:%M" %}
+  {% if hmstart == hmend %}
+    {% if hmstart != "00:00" %}
+      {{ hmstart }}
+    {% endif %}
+  {% else %}
+    {{ include.startDate | date: "%H" }}{% if include.startDate | date: "%M" %}{{ include.startDate | date: ":%M" }}{% endif %} -
+    {{ include.endDate | date: "%H" }}{% if include.endDate | date: "%M" %}{{ include.endDate | date: ":%M" }}{% endif %}
+  {% endif %}
+
+
+{% else %}
+
+  {% if include.startDate | date: "%Y%m" == include.endDate | date: "%Y%m" %}
+
+    {% assign mstart = include.startDate | date: "%B" %}
+    {% case mstart %}
+    {% when 'May' or June' or 'July' %}{{ mstart }}
+    {% when 'September' %}Sept.
+    {% else %}{{ include.startDate | date: "%b" }}.
+    {% endcase %}
+
+    {{ include.startDate | date: "%d" }}-{{ include.endDate | date: "%d" }}
+
+  {% else %}
+
+    {% assign mstart = include.startDate | date: "%B" %}
+    {% case mstart %}
+    {% when 'May' or June' or 'July' %}{{ mstart }}
+    {% when 'September' %}Sept.
+    {% else %}{{ include.startDate | date: "%b" }}.
+    {% endcase %}
+
+    {% assign mend = include.endDate | date: "%B" %}
+    {% case mend %}
+    {% when 'May' or June' or 'July' %}{{ mend }}
+    {% when 'September' %}Sept.
+    {% else %}{{ include.endDate | date: "%b" }}.
+    {% endcase %}
+
+  {% endif %}
+
+
+{% endif %}
+
