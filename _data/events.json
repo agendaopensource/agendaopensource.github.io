@@ -5,7 +5,8 @@
         "location": {
             "@type": "Place",
             "name": "University Fernando Pessoa",
-            "address": "Universidade Fernando Pessoa Praça 9 de Abril, 349 | 4249-004 Porto"
+            "address": "Universidade Fernando Pessoa Praça 9 de Abril, 349 | 4249-004 Porto",
+            "district": "Porto"
         },
         "name": "Hello World 2018",
         "startDate": "2018-02-15",
@@ -20,7 +21,8 @@
         "location": {
             "@type": "Place",
             "name": "UPTEC",
-            "address": "Rua Alfredo Allen 455/461 Porto (Auditorium)"
+            "address": "Rua Alfredo Allen 455/461 Porto (Auditorium)",
+            "district": "Porto"
         },
         "name": "CocoaHeads-Porto",
         "startDate": "2018-02-15 19:00",
@@ -34,7 +36,8 @@
         "location": {
             "@type": "Place",
             "name": "Porto Design Factory",
-            "address": "Rua Dr. António Bernardino de Almeida, 537, Porto, Portugal"
+            "address": "Rua Dr. António Bernardino de Almeida, 537, Porto, Portugal",
+            "district": "Porto"
         },
         "name": "Porto Design Factory  - Social Impact Week #1",
         "startDate": "2018-02-19 09:30",
@@ -48,7 +51,8 @@
         "location":{
             "@type": "Place",
             "name": "BLIP",
-            "address": "Avenida Camilo, nº 94, 4300-095 Porto"
+            "address": "Avenida Camilo, nº 94, 4300-095 Porto",
+            "district": "Porto"
         },
         "name": "0xOPOSEC - [0x69] - The Meet",
         "startDate": "2018-02-22 18:00",
@@ -62,7 +66,8 @@
         "location":{
             "@type": "Place",
             "name": "Pólo Zero",
-            "address": "Passeio dos Clérigos, Rua São Filipe de Nery, nº 87 4050-546 - Porto"
+            "address": "Passeio dos Clérigos, Rua São Filipe de Nery, nº 87 4050-546 - Porto",
+            "district": "Porto"
         },
         "name": "Game Dev Meet Norte - Game Dev Meet NORTE - Fevereiro",
         "startDate": "2018-02-23 18:30",
@@ -76,7 +81,8 @@
         "location": {
             "@type": "Place",
             "name": "Porto I/O",
-            "address": "R. de Cândido dos Reis 81, 4050-152 Porto"
+            "address": "R. de Cândido dos Reis 81, 4050-152 Porto",
+            "district": "Porto"
         },
         "name": "Python Porto Meetup - PyCoffee. Hot coffee and Pythonic discussions in Porto",
         "startDate": "2018-02-24 10:00",
@@ -90,7 +96,8 @@
         "location":{
             "@type": "Place",
             "name": "HostelWorld",
-            "address": "Rua Júlio Dinis 676 - Porto"
+            "address": "Rua Júlio Dinis 676 - Porto",
+            "district": "Porto"
         },
         "name": "DevOps Porto - DevOps Porto #13: Google Cloud Platform and Kubernetes",
         "startDate": "2018-02-28 18:45",
@@ -104,7 +111,8 @@
         "location": {
             "@type": "Place",
             "name": "Porto I/O",
-            "address": "R. de Cândido dos Reis 81, 4050-152 Porto"
+            "address": "R. de Cândido dos Reis 81, 4050-152 Porto",
+            "district": "Porto"
         },
         "name": "Porto Codes",
         "startDate": "2018-03-08 19:00",
@@ -118,7 +126,8 @@
         "location":{
             "@type": "Place",
             "name": "Hard Club",
-            "address": "HARD-CLUB - Mercado Ferreira Borges, 4050-252 Porto"
+            "address": "HARD-CLUB - Mercado Ferreira Borges, 4050-252 Porto",
+            "district": "Porto"
         },
         "name": "TECHinPORTO 2018",
         "startDate": "2018-06-14",
