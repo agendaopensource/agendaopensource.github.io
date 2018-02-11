@@ -6,3 +6,5 @@ gem 'jekyll-paginate'
 gem 'jekyll-feed'
 gem "jekyll-material-theme"
 gem 'jekyll-seo-tag'
+gem 'jekyll-algolia'
+gem 'jekyll-sitemap'
