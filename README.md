@@ -4,6 +4,28 @@
 
 This is the repo of [https://agendaopensource.github.io](https://agendaopensource.github.io)
 
+# Add a new event or meetup
+
+- Edit the file [_data/events.json](https://github.com/agendaopensource/agendaopensource.github.io/blob/master/_data/events.json)
+- Add a new object to the file keeping exactly the same structure:
+```
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "location":{
+        "@type": "Place",
+        "name": "[LOCATION NAME]",
+        "address": "[ADDRESS]",
+        "district": "[DISTRICT]"
+    },
+    "name": "[NAME]",
+    "startDate": "[START DATE]",
+    "endDate": "[END DATE]",
+    "description": "[DESCRIPTION]",
+    "url": "[URL]"
+}
+```
+
 # How to contribute
 
 Feel free to contribute by suggesting [new events](https://github.com/agendaopensource/agendaopensource.github.io/issues/new?template=event.md&title=New%20event&labels=event) or by fixing any [open issues](https://github.com/agendaopensource/agendaopensource.github.io/issues/).  
