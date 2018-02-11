@@ -20,6 +20,18 @@ layout: default
       </p>
       {{ event.description }}
     </div>
+    <!-- micro data -->
+    <div class="hide" itemscope itemtype="http://schema.org/Event">
+      <span itemprop="name">{{ event.name }}</span>
+      <span itemprop="url">{{ event.url }}</span>
+      <span itemprop="startDate">{{ event.startDate }}</span>
+      <span itemprop="image"></span>
+      <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="address">{{ event.location.address }}</span>
+        <span itemprop="name">{{ event.location.name }}</span>
+      </span>
+    </div>
+    <!-- /micro data -->
     {% endfor %}
 
   </div>
