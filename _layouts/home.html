@@ -9,7 +9,12 @@ layout: default
     {{ content }}
 
     {% assign sorted_events = site.data.events | sort:"startDate" %}
+    {% assign today = site.time | date: '%Y%m%d%H%M' %}
+
     {% for event in sorted_events %}
+      {% assign endDate = event.endDate | date: '%Y%m%d%H%M' %}
+      {% if (today < endDate) %}
+
     <div class="card-panel">
       <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br />
       <p>
@@ -32,6 +37,7 @@ layout: default
       </span>
     </div>
     <!-- /micro data -->
+      {% endif %}
     {% endfor %}
 
   </div>

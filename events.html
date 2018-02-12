@@ -1,0 +1,14 @@
+---
+layout: none
+permalink: /events.json
+---
+{% assign filtered_events = "" | split: ',' %}
+{% assign today = site.time | date: '%Y%m%d%H%M' %}
+{% assign events = site.data.events | sort:"startDate" %}
+{% for event in events %} 
+  {% assign endDate = event.endDate | date: '%Y%m%d%H%M' %}
+  {% if (today < endDate) %}
+    {% assign filtered_events = filtered_events | push: event %}
+  {% endif %}
+{% endfor %}
+{{ filtered_events | jsonify }}
