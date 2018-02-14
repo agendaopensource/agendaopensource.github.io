@@ -25,6 +25,9 @@ layout: default
       </p>
       {{ event.description }}
     </div>
+    <script type="application/ld+json">
+       {{ event | jsonify }}
+    </script>
     <!-- micro data -->
     <div class="hide" itemscope itemtype="http://schema.org/Event">
       <span itemprop="name">{{ event.name }}</span>
@@ -33,8 +36,8 @@ layout: default
       <span itemprop="endDate">{{ event.endDate | date_to_xmlschema }}</span>
       <span itemprop="image"></span>
       <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-        <span itemprop="address">{{ event.location.address }}</span>
-        <span itemprop="name">{{ event.location.name }}</span>
+      <span itemprop="address">{{ event.location.address }}</span>
+      <span itemprop="name">{{ event.location.name }}</span>
       </span>
     </div>
     <!-- /micro data -->
