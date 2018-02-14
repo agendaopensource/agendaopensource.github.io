@@ -18,9 +18,9 @@ layout: default
     <div class="card-panel">
       <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br />
       <p>
-        {% include function_event_date.html endDate=event.endDate startDate=event.startDate %}
+        <i class="tiny material-icons">date_range</i>{% include function_event_date.html endDate=event.endDate startDate=event.startDate %}
         {% if event.location.name %}
-          @ {{ event.location.name }}
+        <i class="tiny material-icons">place</i> <a href="https://www.google.pt/maps/place/{{ event.location.name | cgi_escape }} - {{ event.location.address | cgi_escape }}" target="_blank">{{ event.location.name }}</a>
         {% endif %}
       </p>
       {{ event.description }}
@@ -29,7 +29,8 @@ layout: default
     <div class="hide" itemscope itemtype="http://schema.org/Event">
       <span itemprop="name">{{ event.name }}</span>
       <span itemprop="url">{{ event.url }}</span>
-      <span itemprop="startDate">{{ event.startDate }}</span>
+      <span itemprop="startDate">{{ event.startDate | date_to_xmlschema }}</span>
+      <span itemprop="endDate">{{ event.endDate | date_to_xmlschema }}</span>
       <span itemprop="image"></span>
       <span itemprop="location" itemscope itemtype="http://schema.org/Place">
         <span itemprop="address">{{ event.location.address }}</span>
