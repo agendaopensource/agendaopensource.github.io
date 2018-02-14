@@ -63,6 +63,21 @@
     {
         "@context": "http://schema.org",
         "@type": "Event",
+        "location": {
+            "@type": "Place",
+            "name": "Farfetch",
+            "address": "Rua da Lionesa nº 446, Edifício G12, 4465-671 Leça do Balio - Porto",
+            "district": "Porto"
+        },
+        "name": "PWL #01 :: Hello Porto!",
+        "startDate": "2018-02-22 19:00",
+        "endDate": "2018-02-22 21:00",
+        "description": "We are delighted to tell you that we are kicking off the first Papers We Love @ Porto. Our goal is to help bridge the gap between Porto industry and academics: membership of both types are very welcome; and to dive deep into interesting programming topics.",
+        "url": "https://www.meetup.com/Papers-We-Love-Porto/events/247544576/"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
         "location":{
             "@type": "Place",
             "name": "Pólo Zero",
@@ -123,6 +138,21 @@
     {
         "@context": "http://schema.org",
         "@type": "Event",
+        "location": {
+            "@type": "Place",
+            "name": "Edifício Palácio dos Correios",
+            "address": "R. do Bonjardim 345, 4000-010 Porto",
+            "district": "Porto"
+        },
+        "name": "Make or Break.",
+        "startDate": "2018-04-13",
+        "endDate": "2018-04-15",
+        "description": "Make or Break is a 3-day tech fest with prizes, workshops, gadgets, food, and more. Co-organized by AlumniEI-FEUPPorto Codes is a meetup for local and international programming enthusiasts.",
+        "url": "https://makeorbreak.io/"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
         "location":{
             "@type": "Place",
             "name": "Hard Club",
@@ -134,5 +164,14 @@
         "endDate": "2018-06-15",
         "description": "TECHinPORTO was born in 2017 from Jumia's will to share and promote Porto's state of the art Information Technologies. By teaming up with great technology partners, we expect to bring the best from the tech community to our blooming city, learn together and deliver a kickass experience.",
         "url": "https://techinporto.com"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "Commit Porto",
+        "startDate": "2018-06-30",
+        "endDate": "2018-06-30",
+        "description": "Commit Porto is a tech conference to be held in Porto, bringing together professionals from different areas talking about their experience tackling challenges in software development with the latest technologies! It will be an excellent opportunity for knowledge sharing and inherently promote Porto as a vibrant and dynamic city for technology-based companies.",
+        "url": "http://commitporto.com/"
     }
 ]
