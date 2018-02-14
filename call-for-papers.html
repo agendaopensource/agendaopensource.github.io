@@ -7,11 +7,40 @@ permalink: /call-for-papers/
 
 <div class="container">
     <div class="section events">
-        <h1>Call for papers</h1>
-        <p class="flow-text">
-            There's no known ongoing call for papers.<br />
-            Please <a href="{{ site.link_to_cfp }}" target="_blank">add here</a> if you know any event looking for it.
-        </p>
-    </div>
-</div>
 
+    <p class="flow-text">
+        Do you want to share your talent and knowledge with others? Find here ongoing call for papers that you can submit your proposals<br /> 
+    </p>
+
+    <p class="caption">Call for papers</p>
+
+    {% assign sorted_cfp = site.data.callforpappers.sporadic | sort:"deadline" %}
+    {% assign today = site.time | date: '%Y%m%d%H%M' %}
+
+    {% for event in sorted_cfp %}
+        {% assign deadline = event.deadline | date: '%Y%m%d%H%M' %}
+        {% if (today < deadline) %}
+            <div class="card-panel">
+            <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br />
+            <strong>Deadline: {{ event.deadline }}</strong><br /><br />
+            <p>
+                {{ event.description }}
+            </p>
+            </div>
+      {% endif %}
+    {% endfor %}
+
+    <p class="caption">Frequent editions</p>
+
+    {% assign sorted_cfp = site.data.callforpappers.frequent | sort:"name" %}
+    {% for event in sorted_cfp %}
+        <div class="card-panel">
+        <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br /><br />
+        <p>
+            {{ event.description }}
+        </p>
+        </div>
+    {% endfor %}
+
+</div>
+</div>
