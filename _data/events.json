@@ -110,6 +110,21 @@
         "@type": "Event",
         "location":{
             "@type": "Place",
+            "name": "Pólo Zero",
+            "address": "Passeio dos Clérigos, Rua São Filipe de Nery, nº 87 4050-546 - Porto",
+            "district": "Porto"
+        },
+        "name": "OPO.js Meetup #6",
+        "startDate": "2018-02-28 19:00",
+        "endDate": "2018-02-28 21:00",
+        "description": "2018 is up and running and it's time we bring the Porto JavaScript Community together once again with OPO.js #6.",
+        "url": "https://www.meetup.com/opo-js/events/247800372/"
+    },
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "location":{
+            "@type": "Place",
             "name": "HostelWorld",
             "address": "Rua Júlio Dinis 676 - Porto",
             "district": "Porto"
