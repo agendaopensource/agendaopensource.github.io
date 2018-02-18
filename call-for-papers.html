@@ -19,7 +19,7 @@ permalink: /call-for-papers/
 
     {% for event in sorted_cfp %}
         {% assign deadline = event.deadline | date: '%Y%m%d%H%M' %}
-        {% if (today < deadline) %}
+        {% if today < deadline %}
             <div class="card-panel">
             <a class="title" href="{{ event.url }}" target="_blank">{{ event.name }}</a><br />
             <strong>Deadline: {{ event.deadline }}</strong><br /><br />
